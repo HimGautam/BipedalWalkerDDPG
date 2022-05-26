@@ -11,6 +11,8 @@ This project attempts to learn a walking gait for 2D Bipedal Walker in OpenAI Gy
 
 In the training process, first 1000 steps of data is collected by randomly sampling actions from action space. This data acts as pure exploration. After this 1000 steps, we use (Policy Network's prediction + Gaussian Noise) as our action.
 
+Another type of exploration can be done by adding noise to Neural Network Parameters. This method is discussed in a [paper](https://arxiv.org/pdf/1706.01905.pdf) named PARAMETER SPACE NOISE FOR EXPLORATION by OpenAI. It gives better results because the exploratory actions are correlated to inputs. Code for this method is available at ParamNoise [folder](https://github.com/HimGautam/BipedalWalkerDDPG/tree/main/ParamNoise) in this repo.
+
 ## Requirements
 
 This project requires following dependencies:
